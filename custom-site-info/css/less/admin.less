@@ -1,0 +1,42 @@
+.rounded-corners (@radius:5px){
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.csinfo-wrap{
+  max-width: 600px;
+
+  .tabs { // hide .tabs until they get activated
+    display:none;
+    &.ui-tabs{ display:block;}
+  }
+
+  &#home{
+    ul#primary{
+
+      li > a{
+        display:inline-block;
+        border:3px solid rgba(100, 100, 100, 0.5);
+        padding:8px 12px;
+        font-size:16px;
+        font-weight: bold;
+        .rounded-corners;
+        text-decoration: none;
+
+        &:hover{
+          background-color:rgba(100, 100, 100, 0.1);
+          text-decoration: underline;
+          color: blue;
+        }
+      }
+    }
+  } // &#home
+
+  &#style-guide{
+
+  }
+
+}

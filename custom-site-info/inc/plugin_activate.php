@@ -1,0 +1,4 @@
+<?php
+// Plugin activation script
+
+?>
